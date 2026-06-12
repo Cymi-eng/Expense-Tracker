@@ -4,7 +4,7 @@
   "description": "The Expense Tracker is a web application built using HTML, CSS, and JavaScript that helps users manage their daily expenses. Users can add, view, filter, and delete expenses while tracking their total spending. The application stores data in Local Storage, ensuring expenses remain available even after refreshing the page.",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
