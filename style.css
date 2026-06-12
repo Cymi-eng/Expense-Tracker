@@ -1,23 +1,154 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
-    max-width: 700px;
-    margin: 20px auto;
+    background-color: #f0f4ff;
+    padding: 30px 20px;
+    color: #333;
 }
 
-input,
-button,
-select {
+h1 {
+    text-align: center;
+    color: #4a4acf;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+/* Form box */
+.form-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 480px;
+    margin: 0 auto 20px auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.form-box input,
+.form-box select {
+    width: 100%;
     padding: 10px;
-    margin: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
 }
 
-ul {
+.form-box input:focus,
+.form-box select:focus {
+    outline: none;
+    border-color: #4a4acf;
+}
+
+.form-box button {
+    width: 100%;
+    padding: 11px;
+    background-color: #4a4acf;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-box button:hover {
+    background-color: #3838b0;
+}
+
+/* Error message */
+#errorMsg {
+    color: red;
+    font-size: 13px;
+    margin-top: 6px;
+}
+
+/* Summary box */
+.summary-box {
+    background: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    max-width: 480px;
+    margin: 0 auto 20px auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.summary-box h3 {
+    font-size: 18px;
+    color: #4a4acf;
+}
+
+.summary-box select {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Expense list */
+#expenseList {
     list-style: none;
-    padding: 0;
+    max-width: 480px;
+    margin: 0 auto;
 }
 
-li {
-    padding: 10px;
-    border: 1px solid #ddd;
-    margin-bottom: 5px;
+#expenseList li {
+    background: white;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.expense-info span {
+    display: block;
+}
+
+.expense-desc {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.expense-category {
+    font-size: 12px;
+    color: #888;
+    margin-top: 2px;
+}
+
+.expense-amount {
+    font-weight: bold;
+    color: #4a4acf;
+    font-size: 15px;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: #e53935;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.delete-btn:hover {
+    color: #b71c1c;
+}
+
+/* Empty message */
+.empty-msg {
+    text-align: center;
+    color: #aaa;
+    font-size: 14px;
+    padding: 20px 0;
 }
