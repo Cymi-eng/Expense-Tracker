@@ -15,7 +15,6 @@ The Expense Tracker is a web application built using HTML, CSS, and JavaScript t
 * Filter expenses by category.
 * Store expenses using Local Storage.
 * Object-Oriented Programming (OOP) implementation.
-* Functional programming techniques using array methods.
 * Unit testing with Jest.
 
 ---
