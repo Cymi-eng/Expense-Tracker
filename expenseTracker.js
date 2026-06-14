@@ -38,7 +38,7 @@ class ExpenseTracker {
         );
     }
 
-    addMultipleExpenses(...expenses) {
+     addMultipleExpenses(...expenses) {
         this.expenses = [...this.expenses, ...expenses];
     }
 
