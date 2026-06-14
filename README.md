@@ -114,6 +114,7 @@ The application is deployed using GitHub Pages.
 
 ---
 
+## This product is under the MIT License
 ## Author
 
 Ian Cymi
